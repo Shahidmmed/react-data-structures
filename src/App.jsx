@@ -4,6 +4,7 @@ import "react-tabs/style/react-tabs.css";
 import SetExample from "./SetExample";
 import StackExample from "./StackExample";
 import QueueExample from "./QueueExample";
+import TreeExample from "./TreeExample";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,7 +16,6 @@ function App() {
         <Tab>Stack</Tab>
         <Tab>Queue</Tab>
         <Tab>Tree</Tab>
-        <Tab>Tree 2</Tab>
       </TabList>
 
       <TabPanel>
@@ -27,12 +27,9 @@ function App() {
       <TabPanel className="queue">
         <QueueExample />
       </TabPanel>
-      {/* <TabPanel>
+      <TabPanel>
         <TreeExample />
       </TabPanel>
-      <TabPanel>
-        <TreeExample2 />
-      </TabPanel> */}
     </Tabs>
   );
 }

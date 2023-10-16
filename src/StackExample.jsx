@@ -57,7 +57,7 @@ function reducer(state, action) {
     case "undo":
       return {
         rows: addRowAtOriginalIndex(state),
-        // Array.slice() as immutable alternative to Array.pope()
+        // Array.slice() as immutable alternative to Array.pop()
         history: state.history.slice(0, -1),
       };
     default:
